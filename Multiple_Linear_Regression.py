@@ -47,7 +47,7 @@ class Multiple_Linear_Regression:
             np.ndarray: Predicted Target Values.
         """
         try:
-            # Add a column of ones to X_new to account for the intercept
+            # Add a column of ones to X_new to account for the Intercept
             X_new = np.column_stack([np.ones(X_new.shape[0]), X_new])
             return X_new.dot(self.coefficients)
         except Exception as e:
