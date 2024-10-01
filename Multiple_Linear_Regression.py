@@ -21,7 +21,7 @@ class Multiple_Linear_Regression:
         """
         try:
             # Add Column of Ones to X to Account for the Intercept (beta_0)
-            X = np.column_stack([np.ones(X.shape[0], dtype=int), X])
+            X = np.column_stack([np.ones(X.shape[0]), X])
             
             # OLS Formula: beta = (X^T X)^-1 X^T y
             XtX = X.T.dot(X)  # X^T X
