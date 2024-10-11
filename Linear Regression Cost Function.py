@@ -4,7 +4,7 @@ import logging
 logging.basicConfig(level=logging.ERROR,
                           format='%(asctime)s - %(levelname)s - %(message)s')
 
-class CostFunction:
+class LinearRegressionCostFunction:
     
     def __init__(self) -> None:
         """Initialize the Cost Function Class."""

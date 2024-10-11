@@ -5,7 +5,7 @@ import numpy as np
 logging.basicConfig(level=logging.ERROR,
                        format='%(asctime)s - %(levelname)s - %(message)s')
 
-class Multiple_Linear_Regression:
+class MultipleLinearRegression:
     
     def __init__(self) -> None:
         """Initialize the Coefficients."""
