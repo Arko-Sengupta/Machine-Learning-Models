@@ -26,10 +26,9 @@ class LinearRegressionCostFunction:
             if len(y) != len(Y):
                 raise ValueError("The lengths of Actual and Predicted Values must be Same.")
             
-            # Calculate MSE using the Formula
             mse = (1 / (2 * len(y))) * sum((i - j) ** 2 for i, j in zip(y, Y))
             return mse
-        
+
         except Exception as e:
             logging.error("An Error Occurred while Calculating Mean Squared Error.",
                                      exc_info=True)
