@@ -94,7 +94,7 @@ class SimpleLinearRegression:
             float: Predicted Target Value.
         """
         try:
-            return self.beta_0 + self.beta_1 * x
+            return self.beta_0 + (self.beta_1 * x)
         except Exception as e:
             logging.error("An Error Occurred during Prediction.",
                                     exc_info=True)
